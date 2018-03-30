@@ -1,6 +1,6 @@
 from enum import Enum
 import numpy as np
-import scr.SamplePathClass as PathCls
+import scr.SamplePathClasses as PathCls
 import scr.StatisticalClasses as Stat
 
 
@@ -85,7 +85,7 @@ class Cohort:
                 self._survivalTimes.append(value)
 
         for k in self._survivalTimes:
-            if k <= 5:
+            if k > 5:
                 i = 1
                 self._countSurvival_list.append(i)
             else:
