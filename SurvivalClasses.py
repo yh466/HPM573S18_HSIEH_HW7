@@ -85,7 +85,7 @@ class Cohort:
                 self._survivalTimes.append(value)
 
         for k in self._survivalTimes:
-            if k > 5:
+            if k > 5:     # % of patients survived beyond 5 years.
                 i = 1
                 self._countSurvival_list.append(i)
             else:
